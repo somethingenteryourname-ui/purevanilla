@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "purevanilla",
+  "version": "${version}",
+  "name": "PureVanilla",
+  "description": "One key switches between your exact PvP performance settings and normal vanilla visuals, instantly, with no loading screens.",
+  "authors": [],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/purevanilla/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.purevanilla.PureVanillaClient"
+    ]
+  },
+  "mixins": [
+    "purevanilla.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "sodium": "*",
+    "sodium-extra": "*"
+  }
+}
